@@ -1,7 +1,7 @@
-import server from "./config/server";
+import server from "./src/config/server";
+import config from "./src/config/config";
+import './src/config/database';
 
-const PORT = 5000;
-
-server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+server.listen(config.port, () => {
+    console.log(`Server running on port ${config.port}`);
 });
