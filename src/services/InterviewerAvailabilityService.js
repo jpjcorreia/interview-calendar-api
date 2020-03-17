@@ -1,17 +1,18 @@
+/**
+ * Interviewer availability service
+ */
 import { validatePeriods } from "../util/date";
 
-/**
- * Candidate availability service
- */
-class CandidateAvailabilityService {
-  constructor(candidateAvailabilityModel, candidateModel) {
-    this.candidateAvailabilityModel = candidateAvailabilityModel;
-    this.candidateModel = candidateModel;
+class InterviewerAvailabilityService {
+  constructor(interviewerAvailabilityModel, interviewerModel) {
+    this.interviewerAvailabilityModel = interviewerAvailabilityModel;
+    this.interviewerModel = interviewerModel;
+    this.insert = this.insert.bind(this);
   }
 
   /**
    * insert method.
-   * @param id - Id of the candidate
+   * @param id - Id of the interviewer
    * @param data - Data to persist in the database
    * @returns Object with data, status code and error flag
    */
@@ -28,16 +29,15 @@ class CandidateAvailabilityService {
         };
       }
 
-      const item = await this.candidateAvailabilityModel.create(data);
+      const item = await this.interviewerAvailabilityModel.create(data);
       if (item) {
-        await this.candidateModel.findOneAndUpdate(
+        await this.interviewerModel.findOneAndUpdate(
           { _id: id },
           // eslint-disable-next-line no-underscore-dangle
           { $push: { availability_slots: item._id } },
           { new: true, useFindAndModify: false }
         );
-
-        await this.candidateModel.findById(id).populate("availability_slots");
+        await this.interviewerModel.findById(id).populate("availability_slots");
 
         return {
           error: false,
@@ -56,4 +56,4 @@ class CandidateAvailabilityService {
   }
 }
 
-export default CandidateAvailabilityService;
+export default InterviewerAvailabilityService;

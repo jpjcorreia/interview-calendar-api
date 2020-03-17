@@ -1,0 +1,593 @@
+{
+	"info": {
+		"_postman_id": "da9b72b3-55bc-495e-a6a6-74c133a553c2",
+		"name": "interview-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Candidate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\": \"Joao Correia Teste\",\r\n    \"email\": \"joao.correia.test@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"candidates"
+					]
+				},
+				"description": "Create user."
+			},
+			"response": [
+				{
+					"name": "Create Candidate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullname\": \"Joao Correia Teste\",\r\n    \"email\": \"joao.correia.test@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/candidates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"candidates"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "235"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"eb-8jC7E1Nm/prG3bQN6NC/+xR0CXQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 18:17:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"item\": {\n        \"availability_slots\": [],\n        \"_id\": \"5e6fc2c3e6c53932f4af2d94\",\n        \"fullname\": \"Joao Correia Teste\",\n        \"email\": \"joaocorreiatest@gmail.com\",\n        \"createdAt\": \"2020-03-16T18:17:39.117Z\",\n        \"updatedAt\": \"2020-03-16T18:17:39.117Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "Create Candidate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullname\": \"Joao Correia Teste\",\r\n    \"email\": \"joao.correia.test@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/candidates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"candidates"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "235"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"eb-8jC7E1Nm/prG3bQN6NC/+xR0CXQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 18:17:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"item\": {\n        \"availability_slots\": [],\n        \"_id\": \"5e6fc2c3e6c53932f4af2d94\",\n        \"fullname\": \"Joao Correia Teste\",\n        \"email\": \"joaocorreiatest@gmail.com\",\n        \"createdAt\": \"2020-03-16T18:17:39.117Z\",\n        \"updatedAt\": \"2020-03-16T18:17:39.117Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get all Candidates",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\": \"Pedro Correia\",\r\n    \"email\": \"ola@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/candidates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"candidates"
+					]
+				},
+				"description": "Get all Candidates"
+			},
+			"response": [
+				{
+					"name": "Get all Candidates",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullname\": \"Pedro Correia\",\r\n    \"email\": \"ola@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/candidates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"candidates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2709"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a95-dgX8OBDT47R/WdB42b9eSCdCre0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 18:15:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"availability_slots\": [\n                {\n                    \"_id\": \"5e6c2e79dc115a01a07c8bbe\",\n                    \"time_slot\": [\n                        {\n                            \"_id\": \"5e6c2e79dc115a01a07c8bbf\",\n                            \"start_date\": \"2020-03-16T14:00:00.000Z\",\n                            \"end_date\": \"2020-03-16T15:00:00.000Z\"\n                        },\n                        {\n                            \"_id\": \"5e6c2e79dc115a01a07c8bc0\",\n                            \"start_date\": \"2020-03-16T18:00:00.000Z\",\n                            \"end_date\": \"2020-03-16T19:00:00.000Z\"\n                        }\n                    ],\n                    \"createdAt\": \"2020-03-14T01:08:09.073Z\",\n                    \"updatedAt\": \"2020-03-14T01:08:09.073Z\",\n                    \"__v\": 0\n                },\n                {\n                    \"_id\": \"5e6c2ee3dc115a01a07c8bc1\",\n                    \"time_slot\": [\n                        {\n                            \"_id\": \"5e6c2ee3dc115a01a07c8bc2\",\n                            \"start_date\": \"2020-03-17T14:00:00.000Z\",\n                            \"end_date\": \"2020-03-17T15:00:00.000Z\"\n                        },\n                        {\n                            \"_id\": \"5e6c2ee3dc115a01a07c8bc3\",\n                            \"start_date\": \"2020-03-18T13:00:00.000Z\",\n                            \"end_date\": \"2020-03-18T15:00:00.000Z\"\n                        }\n                    ],\n                    \"createdAt\": \"2020-03-14T01:09:55.768Z\",\n                    \"updatedAt\": \"2020-03-14T01:09:55.768Z\",\n                    \"__v\": 0\n                },\n                {\n                    \"_id\": \"5e6c57002de2b70c88661cd6\",\n                    \"time_slot\": [\n                        {\n                            \"_id\": \"5e6c57002de2b70c88661cd7\",\n                            \"start_date\": \"2020-05-17T14:00:00.000Z\",\n                            \"end_date\": \"2020-03-17T15:00:00.000Z\"\n                        },\n                        {\n                            \"_id\": \"5e6c57002de2b70c88661cd8\",\n                            \"start_date\": \"2020-03-18T13:00:00.000Z\",\n                            \"end_date\": \"2020-03-18T15:00:00.000Z\"\n                        }\n                    ],\n                    \"createdAt\": \"2020-03-14T04:01:04.713Z\",\n                    \"updatedAt\": \"2020-03-14T04:01:04.713Z\",\n                    \"__v\": 0\n                }\n            ],\n            \"_id\": \"5e6c2c2970052916b42ef744\",\n            \"fullname\": \"Pedro Correia\",\n            \"email\": \"ola@gmail.com\",\n            \"createdAt\": \"2020-03-14T00:58:17.035Z\",\n            \"updatedAt\": \"2020-03-14T04:01:04.719Z\",\n            \"__v\": 0\n        },\n        {\n            \"availability_slots\": [\n                {\n                    \"_id\": \"5e6e15fd730c1730c8398b10\",\n                    \"time_slot\": [\n                        {\n                            \"_id\": \"5e6e15fd730c1730c8398b11\",\n                            \"start_date\": \"2020-03-16T16:00:00.000Z\",\n                            \"end_date\": \"2020-03-16T17:00:00.000Z\"\n                        },\n                        {\n                            \"_id\": \"5e6e15fd730c1730c8398b12\",\n                            \"start_date\": \"2020-03-19T11:00:00.000Z\",\n                            \"end_date\": \"2020-03-19T13:00:00.000Z\"\n                        },\n                        {\n                            \"_id\": \"5e6e15fd730c1730c8398b13\",\n                            \"start_date\": \"2020-03-21T14:00:00.000Z\",\n                            \"end_date\": \"2020-03-21T15:00:00.000Z\"\n                        },\n                        {\n                            \"_id\": \"5e6e15fd730c1730c8398b14\",\n                            \"start_date\": \"2020-03-23T10:00:00.000Z\",\n                            \"end_date\": \"2020-03-23T18:00:00.000Z\"\n                        }\n                    ],\n                    \"createdAt\": \"2020-03-15T11:48:13.226Z\",\n                    \"updatedAt\": \"2020-03-15T11:48:13.226Z\",\n                    \"__v\": 0\n                },\n                {\n                    \"_id\": \"5e6e16fbf7fc8d1428907d04\",\n                    \"time_slot\": [\n                        {\n                            \"_id\": \"5e6e16fbf7fc8d1428907d05\",\n                            \"start_date\": \"2020-03-16T16:00:00.000Z\",\n                            \"end_date\": \"2020-03-16T17:00:00.000Z\"\n                        },\n                        {\n                            \"_id\": \"5e6e16fbf7fc8d1428907d06\",\n                            \"start_date\": \"2020-03-19T11:00:00.000Z\",\n                            \"end_date\": \"2020-03-19T13:00:00.000Z\"\n                        },\n                        {\n                            \"_id\": \"5e6e16fbf7fc8d1428907d07\",\n                            \"start_date\": \"2020-03-21T14:00:00.000Z\",\n                            \"end_date\": \"2020-03-21T15:00:00.000Z\"\n                        },\n                        {\n                            \"_id\": \"5e6e16fbf7fc8d1428907d08\",\n                            \"start_date\": \"2020-03-29T10:00:00.000Z\",\n                            \"end_date\": \"2020-03-29T18:00:00.000Z\"\n                        }\n                    ],\n                    \"createdAt\": \"2020-03-15T11:52:27.707Z\",\n                    \"updatedAt\": \"2020-03-15T11:52:27.707Z\",\n                    \"__v\": 0\n                }\n            ],\n            \"_id\": \"5e6e144a730c1730c8398b08\",\n            \"fullname\": \"Miguel Pereira\",\n            \"email\": \"miguelpereira@gmail.com\",\n            \"createdAt\": \"2020-03-15T11:40:58.501Z\",\n            \"updatedAt\": \"2020-03-15T11:52:27.714Z\",\n            \"__v\": 0\n        }\n    ],\n    \"total\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Interviewer Availability",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"time_slot\": [\r\n\t\t{\r\n\t\t\t\"start_date\": \"2020-05-17T10:00:00.000Z\",\r\n\t\t\t\"end_date\": \"2020-03-17T18:00:00.000Z\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"start_date\": \"2020-03-18T12:00:00.000Z\",\r\n\t\t\t\"end_date\": \"2020-03-18T17:00:00.000Z\"\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/interviewers/5e6d1537e2df361ac0467d14/availability",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"interviewers",
+						"5e6d1537e2df361ac0467d14",
+						"availability"
+					]
+				},
+				"description": "Interviewer Availability"
+			},
+			"response": [
+				{
+					"name": "Interviewer Availability",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"time_slot\": [\r\n\t\t{\r\n\t\t\t\"start_date\": \"2020-03-23T12:00:00.000Z\",\r\n\t\t\t\"end_date\": \"2020-03-23T18:00:00.000Z\"\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/interviewers/5e6fc96ba59d3204d834ad34/availability",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"interviewers",
+								"5e6fc96ba59d3204d834ad34",
+								"availability"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "270"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10e-rHL7F6JyYGsE0Oaj+r5zszcA/gY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 18:47:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"item\": {\n        \"_id\": \"5e6fc9d4a59d3204d834ad35\",\n        \"time_slot\": [\n            {\n                \"_id\": \"5e6fc9d4a59d3204d834ad36\",\n                \"start_date\": \"2020-03-23T12:00:00.000Z\",\n                \"end_date\": \"2020-03-23T18:00:00.000Z\"\n            }\n        ],\n        \"createdAt\": \"2020-03-16T18:47:48.918Z\",\n        \"updatedAt\": \"2020-03-16T18:47:48.918Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Interviewer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\": \"Maria João\",\r\n    \"email\": \"maria.ss@gmail.com\",\r\n    \"phone\": \"+351919111111\",\r\n    \"main_department\": \"it\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/interviewers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"interviewers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Interviewer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullname\": \"Maria João\",\r\n    \"email\": \"maria.ss@gmail.com\",\r\n    \"phone\": \"+351919111111\",\r\n    \"main_department\": \"it\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/interviewers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"interviewers"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "267"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10b-asmHu+c8Ngx/bJVmpzkr2DVnU2Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 18:46:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"item\": {\n        \"availability_slots\": [],\n        \"_id\": \"5e6fc96ba59d3204d834ad34\",\n        \"fullname\": \"Maria João\",\n        \"email\": \"mariass@gmail.com\",\n        \"phone\": \"+351919111111\",\n        \"main_department\": \"it\",\n        \"createdAt\": \"2020-03-16T18:46:03.108Z\",\n        \"updatedAt\": \"2020-03-16T18:46:03.108Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Interviewers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/interviewers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"interviewers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Candidate Availability",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"time_slot\": [\r\n\t\t{\r\n\t\t\t\"start_date\": \"2020-03-16T16:00:00.000Z\",\r\n\t\t\t\"end_date\": \"2020-03-16T17:00:00.000Z\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"start_date\": \"2020-03-19T11:00:00.000Z\",\r\n\t\t\t\"end_date\": \"2020-03-19T13:00:00.000Z\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"start_date\": \"2020-03-21T14:00:00.000Z\",\r\n\t\t\t\"end_date\": \"2020-03-21T15:00:00.000Z\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"start_date\": \"2020-03-23T10:00:00.000Z\",\r\n\t\t\t\"end_date\": \"2020-03-23T18:00:00.000Z\"\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/candidates/5e6e144a730c1730c8398b08/availability",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"candidates",
+						"5e6e144a730c1730c8398b08",
+						"availability"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Candidate Availability",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"time_slot\": [\r\n\t\t{\r\n\t\t\t\"start_date\": \"2020-03-20T16:00:00.000Z\",\r\n\t\t\t\"end_date\": \"2020-03-20T17:00:00.000Z\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"start_date\": \"2020-03-21T11:00:00.000Z\",\r\n\t\t\t\"end_date\": \"2020-03-21T13:00:00.000Z\"\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/candidates/5e6e144a730c1730c8398b08/availability",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"candidates",
+								"5e6e144a730c1730c8398b08",
+								"availability"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "383"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17f-UZoO0dnEX6jtTO6Bup2oOwCXkJo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 18:28:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"item\": {\n        \"_id\": \"5e6fc54fe6c53932f4af2d95\",\n        \"time_slot\": [\n            {\n                \"_id\": \"5e6fc54fe6c53932f4af2d96\",\n                \"start_date\": \"2020-03-20T16:00:00.000Z\",\n                \"end_date\": \"2020-03-20T17:00:00.000Z\"\n            },\n            {\n                \"_id\": \"5e6fc54fe6c53932f4af2d97\",\n                \"start_date\": \"2020-03-21T11:00:00.000Z\",\n                \"end_date\": \"2020-03-21T13:00:00.000Z\"\n            }\n        ],\n        \"createdAt\": \"2020-03-16T18:28:31.760Z\",\n        \"updatedAt\": \"2020-03-16T18:28:31.760Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get interview time slots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/v1/candidates/5e6e144a730c1730c8398b08/interview_time_slots?interviewer_id=5e6e14b1730c1730c8398b0a&interviewer_id=5e6eb8175938c11ec85d7479",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"candidates",
+						"5e6e144a730c1730c8398b08",
+						"interview_time_slots"
+					],
+					"query": [
+						{
+							"key": "interviewer_id",
+							"value": "5e6e14b1730c1730c8398b0a"
+						},
+						{
+							"key": "interviewer_id",
+							"value": "5e6eb8175938c11ec85d7479"
+						}
+					]
+				},
+				"description": "Get interview time slots"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

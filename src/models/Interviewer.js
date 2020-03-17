@@ -1,9 +1,9 @@
 import mongoose, { Schema } from "mongoose";
 import uniqueValidator from "mongoose-unique-validator";
 /**
- * Candidate model for persisting in the database
+ * Interviewer model for persisting in the database
  */
-class Candidate {
+class Interviewer {
   /**
    * Inits the mongoDb schema for this entity
    */
@@ -20,10 +20,19 @@ class Candidate {
           required: true,
           unique: true
         },
+        phone: {
+          type: String,
+          required: true
+        },
+        main_department: {
+          type: String,
+          enum: ["hr", "it", "admin"],
+          required: true
+        },
         availability_slots: [
           {
             type: mongoose.Schema.Types.ObjectId,
-            ref: "candidateAvailabilities"
+            ref: "interviewerAvailabilities"
           }
         ]
       },
@@ -31,7 +40,7 @@ class Candidate {
     );
 
     schema.plugin(uniqueValidator);
-    mongoose.model("candidates", schema);
+    mongoose.model("interviewers", schema);
   }
 
   /**
@@ -40,8 +49,8 @@ class Candidate {
    */
   getInstance(init = true) {
     init && this.initSchema();
-    return mongoose.model("candidates");
+    return mongoose.model("interviewers");
   }
 }
 
-export default Candidate;
+export default Interviewer;
