@@ -1,7 +1,7 @@
 repo_name: jpjcorreia/interview-calendar-api
-report_id: 2251a0da9f3a0d904af53202388486c0
+report_id: 7ca3bae01a6b9f4a08432f9830c0fe98
 repo_type: Public
-timestamp: '2023-11-09T16:10:26+00:00'
+timestamp: '2023-12-14T09:42:05+00:00'
 requested_by: jpjcorreia
 provider: github
 branch: master
@@ -28,7 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Microframeworks (Backend)
   image_url: https://img.stackshare.io/service/1163/hashtag.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -42,7 +42,7 @@ tools:
   category: Data Stores
   sub_category: Object Document Mapper (ODM)
   image_url: https://img.stackshare.io/service/1231/0TXzZU7W_400x400.jpg
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -56,8 +56,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: JavaScript Compilers
   image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
-  detection_source_url: package-lock.json
-  detection_source: package.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
+  detection_source: ".babelrc"
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
 - name: ESLint
@@ -81,6 +81,17 @@ tools:
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
   detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source: ".github/workflows/azure-webapps-node.yml"
+  last_updated_by: jpjcorreia
+  last_updated_on: 2023-11-11 13:40:57.000000000 Z
 - name: Jest
   description: Painless JavaScript Unit Testing
   website_url: http://facebook.github.io/jest/
@@ -91,7 +102,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Javascript Testing Framework
   image_url: https://img.stackshare.io/service/830/jest.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-10 18:20:46.000000000 Z
@@ -105,7 +116,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -119,7 +130,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Javascript Testing Framework
   image_url: https://img.stackshare.io/no-img-open-source.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -133,7 +144,7 @@ tools:
   category: Monitoring
   sub_category: node.js Application Monitoring
   image_url: https://img.stackshare.io/service/5577/preview.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -159,20 +170,10 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/3643/Xrtdc94q_400x400.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
-- name: Shell
-  description: A shell is a text-based terminal, used for manipulating programs and
-    files. Shell scripts typically manage program execution.
-  website_url: https://en.wikipedia.org/wiki/Shell_script
-  open_source: false
-  hosted_saas: false
-  category: Languages & Frameworks
-  sub_category: Languages
-  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
-  detection_source: Repo Metadata
 - name: superagent library
   description: robust and clean node and browser reqest library
   website_url: https://visionmedia.github.io/superagent/
@@ -192,7 +193,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15848/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -206,7 +207,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15810/default_004658cda9b38934f2871435e9dc15608c86e8be.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -220,7 +221,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16153/default_ac04a744873b460c4ef30a7450ed0c83223640ab.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -234,7 +235,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15952/default_4040fefea2f98006727f63d042275b96a275ab2d.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -248,7 +249,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15819/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -262,7 +263,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16014/default_7a465bc85b23fd837cbc038fd1d504632c41a884.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -276,7 +277,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15800/default_4acafe585186b4157fa23322ae7ca89e24b5cdef.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -290,7 +291,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15888/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -304,7 +305,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -318,7 +319,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -332,7 +333,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -346,7 +347,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -367,7 +368,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17906/default_e0b07170ab7d7ea66954ff35fdeaae5255c4c0aa.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -381,7 +382,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15847/default_4479dbac220be99e50e724b2df6cf415241d71fd.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
@@ -408,7 +409,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16046/default_939338dc71400138c5e4a3464e041bf30f8f82ba.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
