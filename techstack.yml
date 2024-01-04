@@ -1,7 +1,8 @@
 repo_name: jpjcorreia/interview-calendar-api
-report_id: 7ca3bae01a6b9f4a08432f9830c0fe98
+report_id: 2251a0da9f3a0d904af53202388486c0
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T09:42:05+00:00'
+timestamp: '2024-01-04T15:03:30+00:00'
 requested_by: jpjcorreia
 provider: github
 branch: master
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api
   detection_source: Repo Metadata
 - name: ExpressJS
   description: Sinatra inspired web development framework for node.js -- insanely
@@ -69,6 +71,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-10 18:20:46.000000000 Z
@@ -80,6 +83,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -89,6 +93,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/.github/workflows/azure-webapps-node.yml
   detection_source: ".github/workflows/azure-webapps-node.yml"
   last_updated_by: jpjcorreia
   last_updated_on: 2023-11-11 13:40:57.000000000 Z
@@ -156,6 +161,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-10 18:20:46.000000000 Z
@@ -180,6 +186,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/8032/pBeeJQDQ_normal.png
+  detection_source_url: https://github.com/jpjcorreia/interview-calendar-api/blob/master/package.json
   detection_source: package.json
   last_updated_by: João Correia
   last_updated_on: 2020-03-17 00:40:47.000000000 Z
